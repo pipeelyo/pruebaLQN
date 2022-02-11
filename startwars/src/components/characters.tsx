@@ -11,7 +11,7 @@ import Hook from '../hooks/hook';
 import { infoPersons } from "../types/types";
 
 const Characters = (props: any) => {
-    const { people, planets } = Hook(props);
+    const { people } = Hook(props);
     const [open, setOpen] = useState<boolean>(false);
     const [homeworld, setHomeworld] = useState<string>('');
     const [dataModal, setDataModal] = useState<Array<infoPersons>>(() =>[

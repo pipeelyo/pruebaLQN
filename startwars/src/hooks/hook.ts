@@ -4,8 +4,7 @@ const Hook = (props: any) => {
     const [idMenu, setIdMenu] = useState<number>(0);
     const [people, setPeople] = useState<Array<any>>([]);
     const [planets, setPlanets] = useState<Array<any>>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-
+    
     useEffect(() => {
         fetchPeople();
         fetchPlanets();
